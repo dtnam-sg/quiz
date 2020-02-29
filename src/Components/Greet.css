@@ -1,0 +1,17 @@
+.content{
+    background-color: #f0ffff;
+}
+.content-first{
+    text-align: left;
+}
+.content-link a{
+    color: #00f;
+    text-decoration: none;
+    float: right;
+    
+}
+
+ li{
+    list-style: none;
+    text-align: left;
+}

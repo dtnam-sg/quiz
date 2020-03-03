@@ -12,7 +12,7 @@ function Hello(){
                 <p>Get a badge for your skill</p>
             </div>
             <div className="content-link">
-                <a href="#">Learn More</a>             
+                <a href="!#">Learn More</a>             
             </div>
             </div>
             <div className="title-second">

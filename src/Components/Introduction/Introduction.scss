@@ -1,0 +1,31 @@
+.introduction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  & span {
+    font-size: 1.2rem;
+  }
+  & a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+.block {
+  & img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+.introduction-header {
+  background-color: lightgray;
+}
+.content-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.content-block {
+  border-bottom: 1px solid gray;
+  padding-bottom: 30px;
+}

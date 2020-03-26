@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from "./Pages/Home/Home.page";
+import Home from "./Pages/Home/";
 import CourseDetails from "./Pages/CourseDetail/CourseDetails.page";
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -11,7 +11,7 @@ import CourseDetails from "./Pages/CourseDetail/CourseDetails.page";
 // making sure things like the back button and bookmarks
 // work properly.
 
-export default function App() {
+export default function BasicExample() {
   return (
     <Router>
       <div>
@@ -20,10 +20,10 @@ export default function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/dashboard">Dashboard</Link>
           </li>
         </ul>
 
@@ -41,9 +41,6 @@ export default function App() {
             <Home />
           </Route>
           <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/courses/:courseId">
             <CourseDetails />
           </Route>
           <Route path="/dashboard">
@@ -66,13 +63,13 @@ export default function App() {
 //   );
 // }
 
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
+// function About() {
+//   return (
+//     <div>
+//       <h2>About</h2>
+//     </div>
+//   );
+// }
 
 function Dashboard() {
   return (

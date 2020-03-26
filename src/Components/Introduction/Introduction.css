@@ -1,0 +1,46 @@
+.introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+}
+
+.introduction span {
+  font-size: 1.2rem;
+}
+
+.introduction a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.block img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.introduction-header {
+  background-color: lightgray;
+}
+
+.content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+}
+
+.content-block {
+  border-bottom: 1px solid gray;
+  padding-bottom: 30px;
+}
+/*# sourceMappingURL=Introduction.css.map */

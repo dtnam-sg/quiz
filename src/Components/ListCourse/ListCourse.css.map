@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACZ,WAAW,EAAE,IAAI;EACjB,WAAW,EAAE,MAAM;CACpB;;AACD,AAAA,aAAa,CAAC;EACZ,WAAW,EAAE,IAAI;EACjB,SAAS,EAAE,IAAI;CAChB;;AACD,AAAA,YAAY,CAAC;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,OAAO,EAAE,SAAS;CACnB",
+    "sources": [
+        "ListCourse.scss"
+    ],
+    "names": [],
+    "file": "ListCourse.css"
+}

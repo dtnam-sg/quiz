@@ -1,14 +1,14 @@
 import React from "react";
-// import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import Introduction from "../../Components/Introduction/Introduction";
 import ListCourse from "../../Components/ListCourse/ListCousre";
 import "./Home.css";
-
+import { getCourses } from "../CourseDetail/course.service";
 import "font-awesome/css/font-awesome.min.css";
 
-const Content = ({ courses, onViewCourseDetail }) => {
+const Content = ({ courses, onViewCourseDetail, course }) => {
   return (
     <div className="content">
       <Introduction />
@@ -25,17 +25,24 @@ const Home = () => {
     { name: "React " },
     { name: "Vue" }
   ];
-  // let history = useHistory();
-  const handleViewCourseDetail = e => {
-    console.log("what is course ID: ", e);
+  let history = useHistory();
+  const course = getCourses();
 
-    // history.push(`/courses/${courseId}`);
+  const handleViewCourseDetail = courseId => {
+    console.log("what is course ID: ", courseId);
+    console.log(courseId);
+
+    history.push(`/courses/${courseId}`);
     // Navigate to Course detail page
   };
   return (
     <div className="home-page">
       <Header />
-      <Content onViewCourseDetail={handleViewCourseDetail} courses={courses} />
+      <Content
+        onViewCourseDetail={handleViewCourseDetail}
+        courses={courses}
+        course={course}
+      />
       <Footer />
     </div>
   );

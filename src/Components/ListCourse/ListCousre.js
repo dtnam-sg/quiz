@@ -1,8 +1,10 @@
 import React from "react";
 import "../ListCourse/ListCourse.css";
 import Button from "../Button/Button";
+// import { useHistory } from "react-router-dom";
+// import { getCourses } from "../../Pages/CourseDetail/course.service";
 
-const ListItem = ({ /*courseId,*/ courseName, onViewCourseDetail }) => {
+const ListItem = ({ courseName, onViewCourseDetail }) => {
   return (
     <div className="item">
       <span>{courseName}</span>
@@ -29,6 +31,21 @@ const List = ({ onViewCourseDetail, courses = [] }) => {
     </div>
   );
 };
+// let history = useHistory();
+// const course = getCourses();
+// function onViewCourseDetail() {
+
+//   const onViewCourseDetail = courseId => {
+//     console.log(courseId);
+//     history.push(`courses/${courseId}`);
+//   };
+//   return (
+//     <ListItem
+//       courseName={course.name}
+//       onViewCourseDetail={onViewCourseDetail}
+//     />
+//   );
+// }
 
 const Hint = ({ text }) => <p className="hint">{text}</p>;
 

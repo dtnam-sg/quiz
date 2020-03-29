@@ -1,13 +1,14 @@
-.list-courses {
-  line-height: 3rem;
-  align-items: center;
-}
-.button-icons {
-  line-height: 3rem;
-  font-size: 2rem;
-}
-.course-name {
+.item {
   display: flex;
   justify-content: space-between;
-  padding: 10px 15px;
+  align-items: center;
+  border-bottom: 1px solid #d9dadd;
+}
+
+.list-courses {
+  line-height: 3rem;
+}
+.list-course {
+  padding-left: 20px;
+  padding-right: 45px;
 }

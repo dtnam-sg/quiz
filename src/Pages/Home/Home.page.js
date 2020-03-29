@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import Header from "../../Components/Header/Header";
-import Footer from "../../Components/Footer/Footer";
+
 import Introduction from "../../Components/Introduction/Introduction";
 import ListCourse from "../../Components/ListCourse/ListCousre";
 import "./Home.css";
@@ -43,7 +43,6 @@ const Home = () => {
         courses={courses}
         course={course}
       />
-      <Footer />
     </div>
   );
 };

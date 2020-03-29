@@ -2,30 +2,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px;
+  padding-left: 25px;
+  padding-top: 30px;
+  padding-bottom: 90px;
+  padding-right: 45px;
   & span {
     font-size: 1.2rem;
   }
   & a {
     text-decoration: none;
     font-weight: bold;
+    color: #0072b1;
   }
 }
 .block {
+  display: flex;
+  padding-bottom: 90px;
   & img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    padding-right: 5px;
   }
 }
 .introduction-header {
-  background-color: lightgray;
+  background-color: #f2f5f8;
 }
 .content-block {
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
-}
-.content-block {
-  border-bottom: 1px solid gray;
+  padding-left: 50px;
+  border-bottom: 1px solid #d9dadd;
   padding-bottom: 30px;
 }

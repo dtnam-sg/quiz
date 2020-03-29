@@ -8,7 +8,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 15px;
+  padding-left: 25px;
+  padding-top: 30px;
+  padding-bottom: 90px;
+  padding-right: 45px;
 }
 
 .introduction span {
@@ -18,15 +21,24 @@
 .introduction a {
   text-decoration: none;
   font-weight: bold;
+  color: #0072b1;
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 90px;
 }
 
 .block img {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  padding-right: 5px;
 }
 
 .introduction-header {
-  background-color: lightgray;
+  background-color: #f2f5f8;
 }
 
 .content-block {
@@ -36,11 +48,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 10px;
-}
-
-.content-block {
-  border-bottom: 1px solid gray;
+  padding-left: 50px;
+  border-bottom: 1px solid #d9dadd;
   padding-bottom: 30px;
 }
 /*# sourceMappingURL=Introduction.css.map */

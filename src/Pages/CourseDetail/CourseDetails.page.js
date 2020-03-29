@@ -7,7 +7,6 @@ import { useHistory } from "react-router-dom";
 const CourseItems = ({ course, onViewCourseDetail }) => {
   return (
     <article>
-      {/* <button onClick={e => onBack(course.courseId, e)}>Back</button> */}
       <h2>{course.name}</h2>
       <figure>
         <img className="img" src={course.image} alt={course.name} />

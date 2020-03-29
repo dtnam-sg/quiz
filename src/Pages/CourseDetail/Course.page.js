@@ -1,5 +1,4 @@
 import React from "react";
-import "./CourseDetails.css";
 import { useParams, useHistory } from "react-router-dom";
 
 import { getCourseById } from "./course.service";

@@ -13,7 +13,9 @@ const HeaderContent = ({ title, link, linkText }) => {
 const Block = ({ imageSrc, alt, description }) => {
   return (
     <div className="block">
-      <img src={imageSrc} alt={alt} />
+      <div>
+        <img src={imageSrc} alt={alt} />
+      </div>
       <span>{description}</span>
     </div>
   );
@@ -26,14 +28,15 @@ function Introduction() {
       <div className="content-block">
         <Block
           imageSrc="logo192.png"
-          alt="Test"
+          alt="Choice"
           description="Take multiple-choice quiz"
         />
         <Block
           imageSrc="logo192.png"
-          alt="Test"
+          alt="Skill"
           description="Get a badge for your skill "
         />
+        <Block imageSrc="logo192.png" alt="Lock" />
       </div>
     </div>
   );

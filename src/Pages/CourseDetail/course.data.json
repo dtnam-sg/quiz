@@ -8,7 +8,7 @@
   {
     "courseId": "java",
     "name": "Java",
-    "image": "https://manhpt.com/wp-content/uploads/2019/06/1_iIXOmGDzrtTJmdwbn7cGMw-1200x671.png",
+    "image": "https://vn.bitdegree.org/huong-dan/wp-content/uploads/2018/11/java-interview-questions-logo-164x300.png",
     "description": "Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible."
   },
   {
@@ -20,13 +20,13 @@
   {
     "courseId": "react",
     "name": "React",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/768px-React.svg.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRf26Xs3YDTToROkzJ8xOmEjZqIglA_OpBmamqH5tMVRhI7Gz3j&usqp=CAU",
     "description": "React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”. "
   },
   {
     "courseId": "vue",
     "name": "Vue",
-    "image": "https://techtalk.vn/wp-content/uploads/2017/06/vuejs-logo-696x425.jpg",
+    "image": "https://huongtlu.files.wordpress.com/2018/04/a9.jpg",
     "description": "Vue.js (commonly referred to as Vue; pronounced /vjuː/, like `view` is an open-source Model–view–viewmodel JavaScript framework for building user interfaces and single-page applications."
   }
 ]

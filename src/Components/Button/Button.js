@@ -7,9 +7,6 @@ const Button = ({ onClick, icon, text = "" }) => {
       {text}
       {icon}
     </button>
-    // <div className="button">
-    //   <a href={link}>{icons}</a>
-    // </div>
   );
 };
 export default Button;

@@ -24,7 +24,6 @@ function CoursePage() {
   };
   return (
     <div>
-      <h2>Course</h2>
       <Course course={course} onBack={onBack} />
     </div>
   );

@@ -10,7 +10,6 @@ const CourseItems = ({ course, onViewCourseDetail }) => {
       <h2>{course.name}</h2>
       <figure>
         <img className="img" src={course.image} alt={course.name} />
-        <figcaption>{course.description}</figcaption>
       </figure>
       <Button
         icon={<i className="fa fa-chevron-circle-right"></i>}

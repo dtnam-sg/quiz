@@ -3,30 +3,30 @@
     "courseId": ".net",
     "name": ".NET Framework",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Microsoft_.NET_logo.png",
-    "description": "lorem isum"
+    "description": "The .NET Framework is a programming platform and is also a major application implementation platform on Microsoft Windows operating systems developed by Microsoft."
   },
   {
     "courseId": "java",
     "name": "Java",
     "image": "https://manhpt.com/wp-content/uploads/2019/06/1_iIXOmGDzrtTJmdwbn7cGMw-1200x671.png",
-    "description": "lorem isum"
+    "description": "Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible."
   },
   {
     "courseId": "c-sharp",
     "name": "C#",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/225px-C_Sharp_logo.svg.png",
-    "description": "lorem isum"
+    "description": "C# (pronounced see sharp, like the musical note C♯, but written with the number sign)[b] is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines."
   },
   {
     "courseId": "react",
     "name": "React",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/768px-React.svg.png",
-    "description": "lorem isum"
+    "description": "React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”. "
   },
   {
     "courseId": "vue",
     "name": "Vue",
     "image": "https://techtalk.vn/wp-content/uploads/2017/06/vuejs-logo-696x425.jpg",
-    "description": "lorem isum"
+    "description": "Vue.js (commonly referred to as Vue; pronounced /vjuː/, like `view` is an open-source Model–view–viewmodel JavaScript framework for building user interfaces and single-page applications."
   }
 ]

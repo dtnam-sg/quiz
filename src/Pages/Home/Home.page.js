@@ -23,12 +23,18 @@ const Home = () => {
     { name: "Java " },
     { name: "C# " },
     { name: "React " },
-    { name: "Vue" }
+    { name: "React " },
+    { name: "React " },
+    { name: "React " },
+    { name: "React " },
+    { name: "React " },
+    { name: "React " },
+    { name: "Vue" },
   ];
   let history = useHistory();
   const course = getCourses();
 
-  const handleViewCourseDetail = courseId => {
+  const handleViewCourseDetail = (courseId) => {
     console.log("what is course ID: ", courseId);
     console.log(courseId);
 

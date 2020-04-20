@@ -3,7 +3,7 @@ import "../Introduction/Introduction.css";
 
 const HeaderContent = ({ title, link, linkText }) => {
   return (
-    <div className="introduction">
+    <div className="introduction-title">
       <span>{title}</span>
       <a href={link}>{linkText}</a>
     </div>
@@ -12,7 +12,7 @@ const HeaderContent = ({ title, link, linkText }) => {
 
 const Block = ({ imageSrc, alt, description }) => {
   return (
-    <div className="block">
+    <div className="introduction-content__block">
       <div>
         <img src={imageSrc} alt={alt} />
       </div>
@@ -23,20 +23,24 @@ const Block = ({ imageSrc, alt, description }) => {
 
 function Introduction() {
   return (
-    <div className="introduction-header">
+    <div className="content-introduction">
       <HeaderContent title="How it works" link="#" linkText="Learn more" />
-      <div className="content-block">
+      <div className="introduction-content">
         <Block
-          imageSrc="logo192.png"
+          imageSrc="https://static-exp1.licdn.com/sc/h/adj6i4rox81urqvl2lnz4me87"
           alt="Choice"
           description="Take multiple-choice quiz"
         />
         <Block
-          imageSrc="logo192.png"
+          imageSrc="https://static-exp1.licdn.com/sc/h/kn2s7qlapljbu71375bjykd2"
           alt="Skill"
           description="Get a badge for your skill "
         />
-        <Block imageSrc="logo192.png" alt="Lock" />
+        <Block
+          imageSrc="https://static-exp1.licdn.com/sc/h/26mcnomu6yoddxp3x5ocohb5z"
+          alt="Lock"
+          description="Results are private unless you share them"
+        />
       </div>
     </div>
   );

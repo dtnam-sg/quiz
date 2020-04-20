@@ -1,4 +1,4 @@
-.item {
+.list-courses__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,7 +8,7 @@
 .list-courses {
   line-height: 3rem;
 }
-.list-course {
+.content-course {
   padding-left: 20px;
   padding-right: 45px;
 }

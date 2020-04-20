@@ -2,7 +2,7 @@ import React from "react";
 import { useParams, useHistory } from "react-router-dom";
 
 import { getCourseById } from "./course.service";
-
+import Button from "../../Components/Button/Button";
 const Course = ({ course, onBack }) => {
   return (
     <article className="course">
@@ -11,7 +11,12 @@ const Course = ({ course, onBack }) => {
         <img src={course.image} alt={course.name} />
         <figcaption>{course.description}</figcaption>
       </figure>
-      <button onClick={e => onBack(course.courseId, e)}>Back</button>
+      <Button
+        onClick={(e) => onBack(course.courseId, e)}
+        buttonStyle="primary--solid"
+        buttonSize="large"
+        text="Back"
+      />
     </article>
   );
 };
@@ -19,7 +24,7 @@ function CoursePage() {
   const { courseId } = useParams();
   const history = useHistory();
   const course = getCourseById(courseId);
-  const onBack = courseId => {
+  const onBack = (courseId) => {
     history.push(`/courses/${courseId}`);
   };
   return (

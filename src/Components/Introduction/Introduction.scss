@@ -1,4 +1,4 @@
-.introduction {
+.introduction-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,19 +15,17 @@
     color: #0072b1;
   }
 }
-.block {
+.introduction-content__block {
   display: flex;
   padding-bottom: 90px;
   & img {
-    width: 2rem;
-    height: 2rem;
     padding-right: 5px;
   }
 }
-.introduction-header {
+.content-introduction {
   background-color: #f2f5f8;
 }
-.content-block {
+.introduction-content {
   display: flex;
   justify-content: space-between;
   padding-left: 50px;

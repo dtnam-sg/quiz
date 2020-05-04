@@ -29,7 +29,7 @@ function Introduction() {
         <Block
           imageSrc="https://static-exp1.licdn.com/sc/h/adj6i4rox81urqvl2lnz4me87"
           alt="Choice"
-          description="Take multiple-choice quiz"
+          description="Take a multiple-choice quiz"
         />
         <Block
           imageSrc="https://static-exp1.licdn.com/sc/h/kn2s7qlapljbu71375bjykd2"

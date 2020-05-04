@@ -1,14 +1,16 @@
-import React from 'react';
-import './Footer.css';
-function Footer(){
-    return(
-        <div className="footer">
-            <h1>This is footer.</h1>
-        </div>
-    );
+import React from "react";
+import "./Footer.css";
+import Button from "../Button/Button";
+function Footer({ text }) {
+  return (
+    <div className="footer">
+      <Button
+        buttonStyle="primary--solid"
+        buttonSize="large"
+        text={text}
+      ></Button>
+    </div>
+  );
 }
 
-
 export default Footer;
-
-

@@ -1,0 +1,39 @@
+.tab-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gray);
+}
+
+.tab-list-item {
+  list-style: none;
+  font-size: 1.1125rem;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.4rem;
+  cursor: pointer;
+}
+
+.tab-list-item:before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--primary);
+}
+
+.tab-list-item:hover {
+  color: var(--primary);
+}
+
+.tab-list-item:hover:before {
+  width: 70px;
+  left: -6px;
+}
+/*# sourceMappingURL=Tabs.css.map */

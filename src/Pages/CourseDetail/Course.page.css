@@ -1,0 +1,50 @@
+.course-header-page {
+  text-align: center;
+  border-bottom: 1px solid var(--gray);
+}
+
+.course-header-page__title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.course-header-page__detail {
+  color: var(--next-circle);
+  margin-bottom: 1rem;
+}
+
+.course-content {
+  padding-left: 30px;
+}
+
+.course-content__title {
+  font-size: 16px;
+}
+
+.course-content__bub {
+  border-bottom: 1px solid var(--gray);
+}
+
+.course-content__list {
+  margin-left: -43px;
+  line-height: 2.5;
+}
+
+.course-content__education > svg {
+  color: var(--primary);
+}
+
+.course-content__education-desc {
+  margin-left: 10px;
+}
+
+.course-content__link {
+  color: var(--link);
+  font-weight: 600;
+}
+
+.course-content__link:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+/*# sourceMappingURL=Course.page.css.map */

@@ -2,12 +2,11 @@ import React from "react";
 import "../ListCourse/ListCourse.css";
 import Button from "../Button/Button";
 
-const ListItem = ({ courseName, onViewCourseDetail }) => {
+const ListItem = ({ course, onViewCourseDetail }) => {
   return (
     <div className="list-courses__item">
-      <span>{courseName}</span>
+      <span>{course.name}</span>
       <Button
-        onClick={onViewCourseDetail}
         buttonStyle="next--circle"
         buttonSize="medium"
         text={
@@ -23,6 +22,8 @@ const ListItem = ({ courseName, onViewCourseDetail }) => {
             <path d="M9 8L5 2.07 6.54 1l4.2 6.15a1.5 1.5 0 010 1.69L6.54 15 5 13.93z" />
           </svg>
         }
+        // onClick={onViewCourseDetail}
+        onClick={(e) => onViewCourseDetail(course.courseId, e)}
       />
     </div>
   );
@@ -34,9 +35,9 @@ const List = ({ onViewCourseDetail, courses = [] }) => {
       {courses.map((course, idx) => {
         return (
           <ListItem
-            onViewCourseDetail={onViewCourseDetail}
             key={idx}
-            courseName={course.name}
+            course={course}
+            onViewCourseDetail={onViewCourseDetail}
           />
         );
       })}

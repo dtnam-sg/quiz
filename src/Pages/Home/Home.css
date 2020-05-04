@@ -2,10 +2,17 @@
   box-sizing: border-box;
 }
 :root {
-  --black: #000;
-  --red: #f00;
+  --primary: #0073b1;
+  --primary2: #004b7c;
+  --next-circle: rgba(0, 0, 0, 0.6);
+  --white: #fff;
+  --gray: #e0e0e0;
+  --link: #665ed0;
+  --link-hover: #544bc2;
 }
 .content {
   display: flex;
   flex-direction: column;
+  overflow: auto;
+  height: 450px;
 }

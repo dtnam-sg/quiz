@@ -1,7 +1,8 @@
 import React from "react";
+import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Pages/Home/Home.page";
-import CourseDetails from "./Pages/CourseDetail/CourseDetails.page";
+//import CourseDetails from "./Pages/CourseDetail/CourseDetails.page";
 import CoursePage from "./Pages/CourseDetail/Course.page";
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -16,50 +17,33 @@ export default function App() {
   return (
     <Router>
       <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
+        <ul className="btn-home">
+          <li className="btn-icon">
+            <Link to="/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                data-supported-dps="24x24"
+                fill="currentColor"
+                width="24"
+                height="24"
+                focusable="false"
+              >
+                <path d="M20 5.32L13.32 12 20 18.68 18.66 20 12 13.33 5.34 20 4 18.68 10.68 12 4 5.32 5.32 4 12 10.69 18.68 4z"></path>
+              </svg>
+            </Link>
           </li>
-          {/* <li>
-            <Link to="/dashboard">Dashboard</Link>
-          </li> */}
-          {/* <li>
-            <Link to="/about">About</Link>
-          </li> */}
         </ul>
-
-        <hr />
-
-        {/*
-          A <Switch> looks through all its children <Route>
-          elements and renders the first one whose path
-          matches the current URL. Use a <Switch> any time
-          you have multiple routes, but you want only one
-          of them to render at a time
-        */}
         <Switch>
-          {
-            <Route exact path="/">
-              <Home />
-            </Route>
-            /*<Route path="/about">
-            <About />
-          </Route> */
-          }
-          <Route exact path="/courses/:courseId">
-            <CourseDetails />
+          <Route exact path="/">
+            <Home />
           </Route>
-          <Route path="/courses/:courseId/:courseId">
+
+          <Route path="/courses/:courseId">
             <CoursePage />
           </Route>
-          {/* <Route path="/dashboard">
-            <CourseDetails />
-          </Route> */}
         </Switch>
       </div>
     </Router>
   );
 }
-
-// You can think of these components as "pages"
-// in your app.

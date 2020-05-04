@@ -6,9 +6,13 @@ import Introduction from "../../Components/Introduction/Introduction";
 import ListCourse from "../../Components/ListCourse/ListCousre";
 import "./Home.css";
 import { getCourses } from "../CourseDetail/course.service";
-import "font-awesome/css/font-awesome.min.css";
 
-const Content = ({ courses, onViewCourseDetail, course }) => {
+import "font-awesome/css/font-awesome.min.css";
+import Tabs from "../../Components/Tabs/Tabs";
+import Footer from "../../Components/Footer/Footer";
+import Result from "../../Components/ResultContent/Result.Content";
+
+const Content = ({ courses, onViewCourseDetail }) => {
   return (
     <div className="content">
       <Introduction />
@@ -18,21 +22,8 @@ const Content = ({ courses, onViewCourseDetail, course }) => {
 };
 
 const Home = () => {
-  const courses = [
-    { name: ".NET Framework " },
-    { name: "Java " },
-    { name: "C# " },
-    { name: "React " },
-    { name: "React " },
-    { name: "React " },
-    { name: "React " },
-    { name: "React " },
-    { name: "React " },
-    { name: "React " },
-    { name: "Vue" },
-  ];
   let history = useHistory();
-  const course = getCourses();
+  const courses = getCourses();
 
   const handleViewCourseDetail = (courseId) => {
     console.log("what is course ID: ", courseId);
@@ -44,11 +35,19 @@ const Home = () => {
   return (
     <div className="home-page">
       <Header />
-      <Content
-        onViewCourseDetail={handleViewCourseDetail}
-        courses={courses}
-        course={course}
-      />
+      <Tabs>
+        <div label="Quizzes">
+          <Content
+            onViewCourseDetail={handleViewCourseDetail}
+            courses={courses}
+            // course={course}
+          />
+        </div>
+        <div label="Result">
+          <Result />
+        </div>
+      </Tabs>
+      <Footer text="Done" />
     </div>
   );
 };

@@ -1,0 +1,31 @@
+.tab-list {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gray);
+  &-item {
+    list-style: none;
+    font-size: 1.1125rem;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0.4rem;
+    cursor: pointer;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      height: 2px;
+      width: 0;
+      background-color: var(--primary);
+    }
+    &:hover {
+      color: var(--primary);
+
+      &:before {
+        width: 70px;
+        left: -6px;
+      }
+    }
+  }
+}
